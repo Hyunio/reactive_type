@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>가변레이아웃</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      } /* 패딩이 늘어나도 크기가 늘어나지않도록 박스사이징 지정 */
+      .container {
+        width: 90%; /*body크기의 90%*/
+        height: 100px;
+        background-color: orange;
+      }
+      .header {
+        width: 100%; /*container크기에 맞춰 꽉 채워짐*/
+        height: 50px;
+        background-color: tomato;
+      }
+      .main {
+        float: left;
+        width: 67%;
+        height: 200px;
+        padding: 10%; /*부모인 container의 너비 기준*/
+        background-color: purple;
+      }
+      .aside {
+        float: right;
+        width: 33%;
+        height: 200px;
+        background-color: orange;
+      }
+      .footer {
+        clear: both; /*위 플롯의 영향을 없애고 요소를 새롭게 배치하기 위함.*/
+        width: 100%;
+        height: 50px;
+        background-color: bisque;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Header</div>
+      <div class="main">Main</div>
+      <div class="aside">Aside</div>
+      <div class="footer">Footer</div>
+    </div>
+  </body>
+</html>

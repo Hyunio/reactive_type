@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>em과 rem</title>
+    <style>
+      .outer {
+        font-size: 24px;
+      }
+      .inner {
+        font-size: 2em; /* 부모요소outer의 2배 크기 */
+        /* 1rem html태그의 크기에 비례 */
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        background-color: lightblue;
+        padding: 1rem; /* html 기본값인 16px */
+        margin: 1em; /* 여백크기(margin padding)정할 때는 부모가 아닌 자기자신의 글자크기를 기준으로 함.*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="inner">하늘색</div>
+    </div>
+  </body>
+</html>

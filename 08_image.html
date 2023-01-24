@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가변이미지</title>
+    <style>
+      /* div {
+        width: 50%;
+      } */
+      img {
+        width: 100%;
+        /* max-width: 430px; */
+      }
+    </style>
+  </head>
+  <body>
+    <picture>
+      <!-- 특정조건(크기)에 해당하면 이미지 보여주기 -->
+      <source srcset="./imgs/cat2.jpg" media="(min-width: 500px)" />
+      <source srcset="./imgs/cat3.jpg" media="(min-width: 300px)" />
+      <img src="imgs/cat.jpg" />
+    </picture>
+  </body>
+</html>
