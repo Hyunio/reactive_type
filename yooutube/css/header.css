@@ -16,7 +16,7 @@
 }
 .header_start {
   height: 40px; /*40*/
-  line-height: 0px; /*40*/
+  line-height: 40px; /*40*/
 }
 .header_hamburger {
   border: none;
@@ -51,6 +51,7 @@
   border-left: none;
   border-radius: 0 2px 2px 0;
 }
+
 .header_end {
   display: flex;
 }
@@ -71,13 +72,13 @@
   background-size: 30px 30px;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 800px) {
   .header_title {
     display: none;
   }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 450px) {
   .header_center {
     display: none;
   }
